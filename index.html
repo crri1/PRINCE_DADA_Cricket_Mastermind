@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+     <title>PRINCE DADA ( Cricket Mastermind)</title>
+    <style>
+    @keyframes btnAnimation {
+      0%,100% {
+        transform: scale(.9);
+      }
+      50% {
+       transform: scale(1); 
+      }
+
+    }
+
+    .tetegrambtn {
+      /* background: linear-gradient(60deg, #00f2ff, rgb(4, 255, 0), #ff0000); */
+      background-color: rgb(0, 247, 255);
+      background-size: 300% 300%;
+      animation: btnAnimation 2s ease infinite;
+      transition: transform 0.3s ease;
+      /* text-shadow: 2px 2px red; */
+      color: rgb(0, 0, 0);
+      border: 3px solid black;
+      /* box-shadow: 0px 0px 3px 4px rgb(0, 247, 255); */
+    }
+
+    .tetegrambtn:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 font-sans antialiased">
+  <!-- Hero Section -->
+  <div class="relative h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('back.avif');">
+    <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+    <div class="relative text-center text-white max-w-2xl px-6">
+      <img src="logo.jpg" alt="Profile Image"
+        class="mx-auto w-24 h-24  border-4 border-gray-800 shadow-lg">
+      <h1 class="mt-4 text-xl font-extrabold sm:text-5xl"> <strong class="text-4xl text-red-600" style="text-shadow: 2px 2px white;">PRINCE DADA</strong> ( Cricket Mastermind)</h1>
+      <p class="mt-2 text-xl font-semibold text-yellow-300">JOin Karke Sare Loss Cover Karlo ✅</p>
+      <div class="grid place-items-center"><div class="text-3xl rounded-full font-serif w-28  h-28 grid place-items-center  text-center border-white border-4 mt-4 shadow-red-600 shadow-lg font-bold text-red-600" style="text-shadow: 2px 2px white;" id="countdown">30</div></div>
+      <div class="mt-6  grid place-items-center">
+        <a href="https://t.me/+DF_qc81s2MNjMGU1">
+          <button
+            class="tetegrambtn px-12 py-5  rounded-lg flex place-items-center place-content-center gap-3 text-xl font-bold shadow-lg hover:scale-110 border-lg border-black" style="box-shadow: 0px 0px 2px 4px rgb(0, 251, 255);" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+            JOIN PRINCE DADA TELEGRAM </button>
+        </a>
+      </div>
+      <!-- <p class="text-lg mt-2 font-semibold">🎯 KING OF CRICKET TRADING 👑 🔥</p> -->
+      <div class="flex justify-between gap-2 mt-4">
+        <img src="img1.webp" alt="" class="w-16 h-16 border-white border-2 rounded-full">
+        <img src="img3.avif" alt="" class="w-16 h-16 border-white border-2 rounded-full">
+        <img src="img4.webp" alt="" class="w-16 h-16 border-white border-2 rounded-full">
+        <img src="img2.jpg" alt="" class="w-16 h-16 border-white border-2 rounded-full">
+      </div>
+      <div class="mt-4 space-y-2">
+         <div class=" flex gap-3">
+           <p class="text-lg font-semibold bg-rose-600 text-white px-2">BBL 44/43 Pass </p>
+           <p class="text-lg font-semibold bg-rose-600 text-white px-2">2023 IPL 74/72 Pass </p>
+        <p class="text-lg font-semibold bg-rose-600 text-white px-2">2024 T20 55/54 Pass </p>
+        <p class="text-lg font-semibold bg-rose-600 text-white px-2"> PSL 44/42 Pass </p>
+      </div>
+        <p class="text-sm uppercase font-semibold">💰 cricket PREDICTION ki duniya ka King 👑 💰</p>
+      </div>
+      <div class="mt-6 bg-white text-red-600 px-4 py-2 rounded-lg font-bold">
+        ✅ JOIN FREE TELEGRAM CHANNEL
+      </div>
+    </div>
+  </div>
+  <script>
+    let timeLeft = 30; // Countdown start value
+    const countdownElement = document.getElementById('countdown');
+
+    const countdownTimer = setInterval(() => {
+        countdownElement.textContent = timeLeft; // Update the display
+        timeLeft -= 1;
+
+        if (timeLeft < 0) {
+          timeLeft = 30;
+        }
+    }, 1000); // Update every 1 second
+</script>
+</body>
+
+</html>
